@@ -6,6 +6,7 @@ test_suite(
         "glog-test",
         "protobuf-test",
         "eigen-test",
+        "opencv3-test",
     ],
 )
 
@@ -61,6 +62,15 @@ cc_test(
     srcs = ["test_eigen.cc"],
     deps = ["//third_party/googletest:gtest",
       "//third_party/eigen:eigen"
+    ],
+    size = "small",
+)
+
+cc_test(
+    name = "opencv3-test",
+    srcs = ["test_opencv3.cc"],
+    deps = ["//third_party/googletest:gtest",
+      "//third_party/opencv3:opencv3"
     ],
     size = "small",
 )
