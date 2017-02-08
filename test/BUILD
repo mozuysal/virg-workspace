@@ -6,6 +6,7 @@ test_suite(
         "glog-test",
         "protobuf-test",
         "eigen-test",
+        "sfmt-test",
         "opencv3-test",
     ],
 )
@@ -62,6 +63,15 @@ cc_test(
     srcs = ["test_eigen.cc"],
     deps = ["//third_party/googletest:gtest",
       "//third_party/eigen:eigen"
+    ],
+    size = "small",
+)
+
+cc_test(
+    name = "sfmt-test",
+    srcs = ["test_sfmt.cc"],
+    deps = ["//third_party/googletest:gtest",
+      "//third_party/sfmt:sfmt"
     ],
     size = "small",
 )

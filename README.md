@@ -22,5 +22,6 @@ See issues for a list of things that may or may not be fixed in the future.
 - glog: https://github.com/google/glog/releases/tag/v0.3.4
 - Protocol Buffers 3: https://github.com/google/protobuf/releases/tag/v3.1.0
 - Eigen 3: http://bitbucket.org/eigen/eigen/get/3.3.2.tar.gz
+- SFMT: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/SFMT-src-1.5.tar.gz
 - OpenCV 3: https://github.com/opencv/opencv/releases/tag/3.2.0
 - VIRG C Library for util, images, pyramids, affine warps, a CSV parser, an R-like DataFrame class, ... (TODO)
