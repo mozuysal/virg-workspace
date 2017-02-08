@@ -8,6 +8,7 @@ Bazel workspace with a small C library for vision and bootstrap scripts for thir
 - Protocol Buffers 3: https://github.com/google/protobuf/releases/tag/v3.1.0
 - Eigen 3: http://bitbucket.org/eigen/eigen/get/3.3.2.tar.gz
 - SFMT: http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/SFMT/SFMT-src-1.5.tar.gz
+- FLANN: https://github.com/mariusmuja/flann/releases/tag/1.9.1
 - OpenCV 3: https://github.com/opencv/opencv/releases/tag/3.2.0
 
 # Nexus

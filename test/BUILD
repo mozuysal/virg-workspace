@@ -7,6 +7,8 @@ test_suite(
         "protobuf-test",
         "eigen-test",
         "sfmt-test",
+        "flann-test",
+        "flann-c-test",
         "opencv3-test",
     ],
 )
@@ -81,6 +83,24 @@ cc_test(
     srcs = ["test_opencv3.cc"],
     deps = ["//third_party/googletest:gtest",
       "//third_party/opencv3:opencv3"
+    ],
+    size = "small",
+)
+
+cc_test(
+    name = "flann-test",
+    srcs = ["test_flann.cc"],
+    deps = ["//third_party/googletest:gtest",
+      "//third_party/flann:flann"
+    ],
+    size = "small",
+)
+
+cc_test(
+    name = "flann-c-test",
+    srcs = ["test_flann_c.cc"],
+    deps = ["//third_party/googletest:gtest",
+      "//third_party/flann:flann_c"
     ],
     size = "small",
 )
