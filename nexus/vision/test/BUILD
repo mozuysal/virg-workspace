@@ -5,6 +5,7 @@ test_suite(
           "fast-detector-test",
           "svd-test",
           "homography-test",
+          "opencv-util-test",
     ],
 )
 
@@ -46,6 +47,17 @@ cc_test(
     deps = [
         "//third_party/googletest:gtest",
         "//nexus/vision:nexus-vision"
+    ],
+    size = "small",
+)
+
+cc_test(
+    name = "opencv-util-test",
+    srcs = ["tests_opencv_util.cc","tests_main.cc"],
+    deps = [
+        "//third_party/googletest:gtest",
+        "//nexus/vision:nexus-vision",
+        "//third_party/opencv3:opencv3"
     ],
     size = "small",
 )
