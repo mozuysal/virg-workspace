@@ -1,9 +1,8 @@
 cc_library(
-    name="nexus-core",
+    name="nexus-io",
     srcs=glob(["src/*.c"]),
     hdrs=glob(["include/virg/nexus/nx_*.h"]),
     includes=["include"],
-    deps=["//third_party/sfmt:sfmt"],
+    deps=["//nexus/core:nexus-core"],
     visibility=["//visibility:public"],
 )
-
